@@ -14,12 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('layouts.login');
+});
+
+Route::get('/admin', function () {
     return view('layouts.index');
 });
 
 Route::middleware(['auth', 'role:admin'])->group(function(){ 
-    Route::get('/', function () {
+    Route::get('/private', function () {
         return 'Bonjour Admin';
     });
 
 });
+
+/*Route::group(['middleware' => ['role']], function () {
+    Route::get('role', 'HomeController@admin')->name('role');
+});*/
