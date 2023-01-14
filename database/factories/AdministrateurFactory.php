@@ -17,7 +17,7 @@ class AdministrateurFactory extends Factory
     public function definition()
     {
         $genre = $this->faker->randomElement(['masculin', 'feminin']);
-        $role = $this->faker->randomElement(['Administrateur', 'Agent']);
+        $role = $this->faker->randomElement([1, 0]);
         return [
             //
             "Nom"=>$this->faker->LastName,

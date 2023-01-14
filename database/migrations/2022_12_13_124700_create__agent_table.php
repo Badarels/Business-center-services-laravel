@@ -27,10 +27,10 @@ class CreateAgentTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('photo')->nullable(); 
-            $table->string('role');
+            $table->integer('role');
            // $table->enum('role',['Administrateur', 'Agent'])->default('Administrateur');
-            $table->foreignId('users_id')->default(0)->constrained('users');
-            $table->foreignId('campagne_id')->default(0)->constrained('campagne');
+            $table->foreignId('users_id')->default(1)->constrained('users');
+            $table->foreignId('campagne_id')->default(1)->constrained('campagne');
             $table->timestamps();
         });
     }

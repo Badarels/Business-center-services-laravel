@@ -18,8 +18,8 @@ class AgentFactory extends Factory
      */
     public function definition()
     {
-        $genre=$this->faker->randomElements(["Masculin","Feminin"]);
-        $role=$this->faker->randomElements(["Administrateur","Agent"]);
+        $genre=$this->faker->randomElement(['Masculin', 'Feminin']);
+        $role=$this->faker->randomElement([1, 0]);
         
         return [
             "Nom"=>$this->faker->LastName,
@@ -37,5 +37,6 @@ class AgentFactory extends Factory
             //"photo" => $this->faker->image('public/images/bcs',400,300, null, false),
             "role"=>$role,
         ];
+        
     }
 }

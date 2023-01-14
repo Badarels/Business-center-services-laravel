@@ -19,7 +19,7 @@ class CreateAppelTable extends Migration
             $table->date('date_appel');
             $table->foreignId('agent_id')->contrained();
             $table->foreignId('rendez-vous_id')->contrained();
-            $table->timestamps();
+            $table->timestamps(); 
         });
 
         Schema::enableForeignKeyConstraints();

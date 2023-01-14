@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use App\Models\Administrateur;
 use App\Models\Agent;
 use App\Models\Campagne;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,10 +18,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-        //Administrateur::factory(10)->create();
-        //Agent::factory(10)->create();
-        //Campagne::factory(10)->create();
+        User::factory(10)->create();
+        Administrateur::factory(10)->create();
+        Agent::factory(10)->create();
+        Campagne::factory(10)->create();
 
        $this->call(userroleSeeder::class);
 

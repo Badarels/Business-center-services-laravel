@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,21 +15,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.login');
-});
+// Route::get('/sdl', function () {
+//     return view('layouts.login2');
+// });
 
-Route::get('/admin', function () {
-    return view('layouts.index');
-});
+// Route::get('/admin', function(){
+//     return view('layouts.index');
+// });
 
-Route::middleware(['auth', 'role:admin'])->group(function(){ 
-    Route::get('/private', function () {
-        return 'Bonjour Admin';
-    });
+// Route::middleware(['auth','role:admin'])->group(function(){ 
+//     //Route::resources('/login', UserController::class);
 
-});
+// });
 
-/*Route::group(['middleware' => ['role']], function () {
-    Route::get('role', 'HomeController@admin')->name('role');
-});*/
+// /*Route::group(['middleware' => ['role']], function () {
+//     Route::get('role', 'HomeController@admin')->name('role');
+// });*/
+
+Auth::routes();
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -2307,7 +2307,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #7356f1;
+  background-color: #61b0ff;
   border-color: #7356f1; }
   .btn-primary:hover {
     color: #fff;
@@ -9007,6 +9007,22 @@ a {
 [data-layout="horizontal"] .nav-control {
   display: none; }
 
+  .logo-auth {
+    vertical-align: middle;
+    border-style: none;
+    width: 500;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    width: 17.1875rem;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #fff;
+   }
+   .body-auth{
+    background-color: #fff;
+   }
+
 @media only screen and (max-width: 767px) {
   [data-sidebar-style="overlay"] .nav-header .logo-abbr {
     display: block; } }
@@ -9033,7 +9049,7 @@ a {
   }
   .logo-abbr{
     width: 13.1875rem;
-   margin: 15px;
+     margin: 15px;
     border-radius: 50%;
     background-color: #fff;
   }
@@ -24184,9 +24200,12 @@ table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.
 .authincation-content {
   background: #fff;
   box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
-  border-radius: 5px; }
+  border-radius: 5px; 
+  /*background: url("../images/bcs.png");*/}
+
   [data-theme-version="dark"] .authincation-content {
     background: #262932;
+    
     box-shadow: none; }
 
 .welcome-content {
