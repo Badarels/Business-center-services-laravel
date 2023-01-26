@@ -2922,7 +2922,12 @@ input[type="button"].btn-block {
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .btn.active {
       z-index: 1; }
-
+      
+.ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .btn-toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -6442,10 +6447,12 @@ button.bg-dark:focus {
 
 .ml-1,
 .mx-1 {
-  margin-left: 0.25rem !important; }
+  margin-left: 0.25rem !important;}
 
 .m-2 {
-  margin: 0.5rem !important; }
+  margin: 0.5rem !important;
+  text-overflow: ellipsis;
+}
 
 .mt-2,
 .my-2 {

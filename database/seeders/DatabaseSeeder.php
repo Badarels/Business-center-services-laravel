@@ -23,7 +23,17 @@ class DatabaseSeeder extends Seeder
         Agent::factory(10)->create();
         Campagne::factory(10)->create();
 
-       $this->call(userroleSeeder::class);
+       $this->call(roleSeeder::class);
 
+        User::find(1)->role()->attach(1);
+        User::find(2)->role()->attach(2);
+        User::find(3)->role()->attach(3);
+        User::find(4)->role()->attach(4);
+
+       /* $user = User::find(1);
+        $user->roles()->attach(2); // Affecte le rôle 2 à l'utilisateur 1
+        $user->roles()->detach(2); // Retire le rôle 2 de l'utilisateur 1
+        $user->roles()->sync([1, 3]); // Affecte les rôles 1 et 3 à l'utilisateur 1 en retirant les autres
+       */
     }
 }

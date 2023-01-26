@@ -29,7 +29,7 @@ class CreateAdministrateurTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('photo')->nullable(); 
-            $table->integer('role');
+            $table->integer('roles');
            // $table->enum('role',['Administrateur', 'Agent'])->default('Administrateur');
             $table->foreignId('users_id')->default(1)->constrained('users');
             $table->timestamps();

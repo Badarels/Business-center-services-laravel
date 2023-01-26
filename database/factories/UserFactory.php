@@ -33,7 +33,7 @@ class UserFactory extends Factory
 
              //"photo" => $this->faker->image(storage_path('bcs',400,300, null, false)), 
             //"photo" => $this->faker->image('public/images/bcs',400,300, null, false),
-            "role"=>$role,
+            "roles"=>$role,
 
             //image('template/images/bcs.png',400,300),
         

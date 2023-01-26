@@ -13,11 +13,10 @@ class CreateUserRoleTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_role', function (Blueprint $table) {
+        Schema::create('users_roles', function (Blueprint $table) {
             $table->Id();
-            $table->string('detail_role');
-            $table->foreignId('user_id')->default(0);
-            $table->foreignId('role_id')->default(0);
+            $table->foreignId('users_id')->default(0);
+            $table->foreignId('roles_id')->default(0);
     
         });
         Schema::enableForeignKeyConstraints();
@@ -30,10 +29,10 @@ class CreateUserRoleTable extends Migration
      */
     public function down()
     {
-        Schema::table('user_role', function (Blueprint $table) {
-            $table->dropConstrainedForeign(['user_id', 'role_id']);
+        Schema::table('users_roles', function (Blueprint $table) {
+            $table->dropConstrainedForeign(['users_id', 'roles_id']);
          });
          
-        Schema::dropIfExists('user_role');
+        Schema::dropIfExists('users_roles');
     }
 }

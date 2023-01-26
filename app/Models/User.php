@@ -19,10 +19,26 @@ class User extends Authenticatable
     public function Administrateur(){
         return $this->hasMany(Administrateur::class);
     }
+     public function role(){
+            return $this->belongsToMany(Role::class, "users_roles","users_id","roles_id");
+    }
 
+   /* public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }*/
     public function Compte(){
         return $this->hasMany(Compte::class);
     }
+    //permet de savoir le role d'un utilisateur
+    public function hasRole($role){
+        return $this->role()->where("detail_roles", $role)->first() !== null;
+    }
+   
+    public function hasAnyRole($roles){
+        return $this->role()->whereIn("detail_roles", $roles)->first() !== null;
+    }
+
 
     /**
      * The attributes that are mass assignable.
