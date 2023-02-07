@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Edumin - Bootstrap Admin Dashboard </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{url('template/template/template/images/favicon.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url('template/template/template/images/bcs.png')}}">
     <link rel="stylesheet" href="{{ url('template/vendor/jqvmap/css/jqvmap.min.css')}}">
 	<link rel="stylesheet" href="{{ url('template/vendor/chartist/css/chartist.min.css')}}">
 	<link rel="stylesheet" href="{{ url('template/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
@@ -94,27 +94,27 @@
         Scripts
     ***********************************-->
     <!-- Required template/vendors -->
-<script src="{{asset('template/vendor/global/global.min.js')}}"></script>
-	<script src="{{asset('template/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
-    <script src="{{asset('template/js/custom.min.js')}}"></script>
-	<script src="{{asset('template/js/dlabnav-init.js')}}"></script>
+        <script src="{{asset('template/vendor/global/global.min.js')}}"></script>
+            <script src="{{asset('template/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
+            <script src="{{asset('template/js/custom.min.js')}}"></script>
+            <script src="{{asset('template/js/dlabnav-init.js')}}"></script>
 
-    <!-- Chart ChartJS plugin files -->
-    <script src="{{asset('template/vendor/chart.js/Chart.bundle.min.js')}}"></script>
-	
-	<!-- Chart piety plugin files -->
-    <script src="{{asset('template/vendor/peity/jquery.peity.min.js')}}"></script>
-	
-	<!-- Chart sparkline plugin files -->
-    <script src="{{asset('template/vendor/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
-	
-		<!-- Demo scripts -->
-    <script src="{{asset('template/js/dashboard/dashboard-3.js')}}"></script>
-	
-	<!-- Svganimation scripts -->
-    <script src="{{asset('template/vendor/svganimation/vivus.min.js')}}"></script>
-    <script src="{{asset('template/vendor/svganimation/svg.animation.js')}}"></script>
-    <script src="{{asset('template/js/styleSwitcher.js')}}"></script>
-	
-</body>
+            <!-- Chart ChartJS plugin files -->
+            <script src="{{asset('template/vendor/chart.js/Chart.bundle.min.js')}}"></script>
+            
+            <!-- Chart piety plugin files -->
+            <script src="{{asset('template/vendor/peity/jquery.peity.min.js')}}"></script>
+            
+            <!-- Chart sparkline plugin files -->
+            <script src="{{asset('template/vendor/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
+            
+                <!-- Demo scripts -->
+            <script src="{{asset('template/js/dashboard/dashboard-3.js')}}"></script>
+            
+            <!-- Svganimation scripts -->
+            <script src="{{asset('template/vendor/svganimation/vivus.min.js')}}"></script>
+            <script src="{{asset('template/vendor/svganimation/svg.animation.js')}}"></script>
+            <script src="{{asset('template/js/styleSwitcher.js')}}"></script>
+            
+        </body>
 </html>

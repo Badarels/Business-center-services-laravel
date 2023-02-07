@@ -3,7 +3,7 @@
         ***********************************-->
 <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="{{asset('template/images/bcs.png')}}" alt="">
+                <img class="img-fluid rounded-circle logo-abbr" src="{{asset('template/images/bcs.png')}}" alt="">
                 <img class="logo-compact" src="{{asset('template/images/logo-text-white.png')}}" alt="">
                 <img class="brand-title" src="{{asset('template/images/logo-text-white.png2')}}" alt="">
             </a>
@@ -205,8 +205,8 @@
                                     </a>
                                     <a href="{{url('template/app-profile.html')}}" class="dropdown-item ai-icon">
                                         <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                
-                                        @if (auth()->user()->hasRole('Super Administrateur')) 
+                                            {{--<span class="ml-2">{{getROleName()}}</span>  --}} 
+                                        @if(auth()->user()->hasRole('Super Administrateur')) 
                                             <span class="ml-2">Super Administrateur</span>
                                         @elseif (auth()->user()->hasRole('Administrateur')) 
                                           <span class="ml-2">Administrateur</span>
@@ -215,6 +215,7 @@
                                         @else
                                         <span class="ml-2">Visiteur</span>
                                         @endif
+                                       
                                     </a>
                                       <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

@@ -1,24 +1,20 @@
 
   <!--  Sidebar de l'administrateur --> 
-  @if(auth()->user()->hasRole("Administrateur"))
-<div class="dlabnav">
+  @can("Administrateur")
+    <div class="dlabnav">
 
             <div class="dlabnav-scroll">
                 <ul class="metismenu" id="menu">
-                    <li class="nav-label first">Main Menu</li>
+                    <li class="nav-label first">Menu principal</li>
 
-                    <li><a class="has-arrow" href="{{url('template/javascript:void()')}}" aria-expanded="false">
+                    <li><a class="has-arrow" href="{{url('/')}}" aria-expanded="false">
 							<i class="la la-home"></i>
-							<span class="nav-text">Dashboard</span>
+							<span class="nav-text">ACCUEIL</span>
 						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="{{url('template/index.html')}}">Dashboard 1</a></li>
-                            <li><a href="{{url('template/index-2.html')}}">Dashboard 2</a></li>
-                            <li><a href="{{url('template/index-3.html')}}">Dashboard 3</a></li>
-                        </ul>
+                       
                     </li>
-        
-					<li><a class="has-arrow" href="{{url('template/javascript:void()')}}" aria-expanded="false">
+         
+					<li><a class="has-arrow" href="{{Route('admin.utilisateur.users.index')}}" aria-expanded="false">
 							<i class="la la-users"></i>
 							<span class="nav-text">Gestion utilisateurs</span>
 						</a>
@@ -28,7 +24,7 @@
 							<span class="nav-text">Agents</span>
 						    </a>
                             <ul aria-expanded="false">
-                                <li><a href="{{url('template/all-students.html')}}">Liste Agents</a></li>
+                                <li><a href="{{Route('admin.utilisateur.users.index')}}">Liste Agents</a></li>
                                 <li><a href="{{url('template/add-student.html')}}">Ajouter Agents</a></li>
                                 <li><a href="{{url('template/edit-student.html')}}">Editer Agents</a></li>
                                 <li><a href="{{url('template/about-student.html')}}"> A Propos Agents</a></li>
@@ -72,41 +68,56 @@
 				  </li>
 				</ul>
             </div>
-        </div>
-        @endif
+         </div>
+    
+      @endcan
      <!--  Sidebar de l'agent --> 
-     @if(auth()->user()->hasRole("Agent"))
-        <div class="dlabnav">
-         <div class="dlabnav-scroll">
+      @can("Agent")
+      <div class="dlabnav">
+            <div class="dlabnav-scroll">
                 <ul class="metismenu" id="menu">
-               
-					<li><a class="has-arrow" href="{{url('template/javascript:void()')}}" aria-expanded="false">
+                    <li class="nav-label first">Menu Principal</li>
+
+                    <li><a class="has-arrow" href="{{url('/')}}" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">ACCUEIL</span>
+						</a>
+                    </li>
+                    <!--
+                    <li><a class="has-arrow" href="{{url('//template/javascript:void()')}}" aria-expanded="false">
 							<i class="la la-calendar"></i>
 							<span class="nav-text">Rendez-Vous</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="{{url('/')}}">Mes Rendez-vous</a></li>
-                            <li><a href="{{url('/')}}">Ajouter Rendez-vous</a></li>
-                            <li><a href="{{url('/')}}">Editer Rendez-vous </a></li>
-                            <li><a href="{{url('/')}}">A Propos Rendez-vous</a></li>
+                                <li><a href="{{url('/')}}">Mes Rendez-vous</a></li>
+                                <li><a href="{{url('/')}}">Ajouter Rendez-vous</a></li>
+                                <li><a href="{{url('/')}}">Editer Rendez-vous </a></li>
+                                <li><a href="{{url('/')}}">A Propos Rendez-vous</a></li>
                         </ul>
                     </li>
-					<li><a class="has-arrow" href="{{url('template/javascript:void()')}}" aria-expanded="false">
-							<i class="la la-book"></i>
+                        -->
+				    <li><a class="has-arrow" href="{{url('//template/javascript:void()')}}" aria-expanded="false">
+							<i class="la la-calendar"></i>
+							<span class="nav-text">Rendez-Vous</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{url('template/all-library.html')}}">Mes Rendez-Vous</a></li>
+                            <li><a href="{{url('template/add-library.html')}}">Ajouter Rendez-Vous</a></li>
+                            <li><a href="{{url('template/edit-library.html')}}">Editer Rendez-Vous</a></li>
+                        </ul>
+                    </li>
+
+                       <li><a class="has-arrow" href="{{url('//template/javascript:void()')}}" aria-expanded="false">
+							<i class="la la-calendar"></i>
 							<span class="nav-text">Fichiers</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="{{url('/')}}">Consulter Mes Fichiers</a></li>
-                            <li><a href="{{url('/')}}">Ajouter des Fichiers</a></li>
-                            <li><a href="{{url('/')}}">Edit Fichiers</a></li>
+                            <li><a href="{{url('template/all-library.html')}}">Consulter Fichiers</a></li>
+                            <li><a href="{{url('template/add-library.html')}}">Ajouter des Fichiers</a></li>
+                            <li><a href="{{url('template/edit-library.html')}}">Editer Fichiers</a></li>
                         </ul>
                     </li>
-				  </li>
 				</ul>
             </div>
-            </div>
-            @endcan
-        
-
-    
-
+        </div>
+       @endcan

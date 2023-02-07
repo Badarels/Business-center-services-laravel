@@ -9000,11 +9000,12 @@ a {
     -webkit-transform: scale(1);
     transform: scale(1); } }
 .footer {
+  position: fixed;
   padding-left: 17.1875rem;
   background-color: #F7F8FA; }
   .footer .copyright {
     padding: 0.9375rem; }
-    .footer .copyright p {
+    .footer .copyright p {  
       text-align: center;
       margin: 0; }
     .footer .copyright a {
@@ -9055,7 +9056,7 @@ a {
     max-height: 100%; 
   }
   .logo-abbr{
-    width: 13.1875rem;
+    width: 9.1875rem;
      margin: 15px;
     border-radius: 50%;
     background-color: #fff;

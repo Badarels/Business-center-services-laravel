@@ -47,7 +47,7 @@ class AuthServiceProvider extends ServiceProvider
                 return $user->hasRole("Supperviseur");
             }
             );
-            Gate::before(function (User $user){
+            Gate::after(function (User $user){
                 return $user->hasRole("Super Administrateur");
             }
             );

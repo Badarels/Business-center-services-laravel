@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
         User::find(2)->role()->attach(2);
         User::find(3)->role()->attach(3);
         User::find(4)->role()->attach(4);
+        //User::find(3)->role()->sync([2]);
 
        /* $user = User::find(1);
         $user->roles()->attach(2); // Affecte le rôle 2 à l'utilisateur 1
