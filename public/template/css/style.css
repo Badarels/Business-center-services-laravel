@@ -8716,7 +8716,9 @@ a.text-dark:hover, a.text-dark:focus {
     border-collapse: collapse !important; }
     .table td,
     .table th {
-      background-color: #fff !important; }
+      background-color: #fff !important; 
+      min-width: 300px;
+    }
 
   .table-bordered th,
   .table-bordered td {

@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="{{ url('template/css/style.css')}}">
 	<link rel="stylesheet" href="{{ url('template/css/skin-2.css')}}">
 
+    <link rel="stylesheet" href="{{ url('template/vendor/datatables/css/jquery.dataTables.min.css')}}">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="{{ url('template/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
+    <link rel="stylesheet" href="{{ url('template/css/style.css')}}">
+
 </head>
 
 <body>
@@ -115,6 +120,9 @@
             <script src="{{asset('template/vendor/svganimation/vivus.min.js')}}"></script>
             <script src="{{asset('template/vendor/svganimation/svg.animation.js')}}"></script>
             <script src="{{asset('template/js/styleSwitcher.js')}}"></script>
-            
+            <!-- Datatable -->
+            <script src="{{asset('template/vendor/datatables/js/jquery.dataTables.min.js')}}"></script>
+            <script src="{{asset('template/js/plugins-init/datatables.init.js')}}"></script>
+          
         </body>
 </html>

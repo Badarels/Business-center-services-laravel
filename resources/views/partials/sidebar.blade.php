@@ -35,7 +35,7 @@
 							<span class="nav-text">Administrateurs</span>
 						    </a>
                             <ul aria-expanded="false">
-                                <li><a href="{{url('template/all-students.html')}}">Liste Administrateurs</a></li>
+                                <li><a href="{{url('/ListeUtilisateurs')}}">Liste Administrateurs</a></li>
                                 <li><a href="{{url('template/add-student.html')}}">Ajouter Administrateurs</a></li>
                                 <li><a href="{{url('template/edit-student.html')}}">Editer Administrateurs</a></li>
                                 <li><a href="{{url('template/about-student.html')}}"> A Propos Administrateurs</a></li>
