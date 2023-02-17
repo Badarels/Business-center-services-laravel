@@ -10,4 +10,7 @@ class UtilisateurController extends Controller
     public function listeUtilisateur(){
         return view("layouts.ListeUtilisateur");
     }
+    public function ajouterUtilisateur(){
+        return view("layouts.ajouterUtilisateur");
+    }
 }

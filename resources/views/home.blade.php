@@ -211,7 +211,7 @@
                                     <ul class="timeline">
                                         <li>
                                             <div class="timeline-badge primary"></div>
-                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic1.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Dr sultads Send you Photo</h5>
@@ -221,7 +221,7 @@
                                         </li>
                                         <li>
                                             <div class="timeline-badge warning"></div>
-                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic2.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Resport created successfully</h5>
@@ -231,7 +231,7 @@
                                         </li>
                                         <li>
                                             <div class="timeline-badge danger"></div>
-                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic3.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Reminder : Treatment Time!</h5>
@@ -241,7 +241,7 @@
                                         </li>
 										<li>
                                             <div class="timeline-badge success"></div>
-											<a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+											<a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic4.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Dr sultads Send you Photo</h5>
@@ -251,7 +251,7 @@
                                         </li>
                                         <li>
                                             <div class="timeline-badge warning"></div>
-											<a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+											<a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic5.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Resport created successfully</h5>
@@ -261,7 +261,7 @@
                                         </li>
                                         <li>
                                             <div class="timeline-badge dark"></div>
-                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic6.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Reminder : Treatment Time!</h5>
@@ -271,7 +271,7 @@
                                         </li>
                                         <li>
                                             <div class="timeline-badge info"></div>
-                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic7.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Dr sultads Send you Photo</h5>
@@ -281,7 +281,7 @@
                                         </li>
 										<li>
                                             <div class="timeline-badge danger"></div>
-                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic8.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Resport created successfully</h5>
@@ -291,7 +291,7 @@
                                         </li>
                                         <li>
                                             <div class="timeline-badge success"></div>
-                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+                                            <a class="timeline-panel text-muted mb-3 d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('templateimages/profile/education/pic9.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Reminder : Treatment Time!</h5>
@@ -301,7 +301,7 @@
                                         </li>
 										<li>
                                             <div class="timeline-badge warning"></div>
-											<a class="timeline-panel text-muted d-flex align-items-center" href="{{url('template/javascript:void(0);')}}">
+											<a class="timeline-panel text-muted d-flex align-items-center" href="{{url('template/;')}}">
                                                 <img class="rounded-circle" alt="image" width="50" src="{{asset('template/images/profile/education/pic10.jpg')}}">
 												<div class="col">
 													<h5 class="mb-1">Dr sultads Send you Photo</h5>
@@ -335,7 +335,7 @@
                                         <tbody id="customers">
                                             <tr class="btn-reveal-trigger">
                                                 <td class="p-3">
-                                                    <a href="{{url('template/javascript:void(0);')}}">
+                                                    <a href="{{url('template/;')}}">
                                                         <div class="media d-flex align-items-center">
                                                             <div class="avatar avatar-xl mr-2">
                                                                 <img class="rounded-circle img-fluid"  src="{{asset('template/images/avatar/5.png')}} " width="30" alt="">
@@ -352,12 +352,12 @@
                                                 <td class="py-2">30/03/2018</td>
                                                 <td>
                                                     <a href="{{url('template/edit-student.html')}}" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="{{url('template/javascript:void(0);')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <a href="{{url('template/;')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                             <tr class="btn-reveal-trigger">
                                                 <td class="p-3">
-                                                    <a href="{{url('template/javascript:void(0);')}}">
+                                                    <a href="{{url('template/;')}}">
                                                         <div class="media d-flex align-items-center">
                                                             <div class="avatar avatar-xl mr-2">
                                                                 <img class="rounded-circle img-fluid" src="{{asset('template/images/avatar/1.png')}}" alt="" width="30">
@@ -374,12 +374,12 @@
                                                 <td class="py-2">11/07/2017</td>
                                                 <td>
                                                     <a href="{{url('template/edit-student.html')}}" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="{{url('template/javascript:void(0);')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <a href="{{url('template/;')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                             <tr class="btn-reveal-trigger">
                                                 <td class="p-3">
-                                                    <a href="{{url('template/javascript:void(0);')}}">
+                                                    <a href="{{url('template/;')}}">
                                                         <div class="media d-flex align-items-center">
                                                             <div class="avatar avatar-xl mr-2">
                                                                 <img class="rounded-circle img-fluid" src="{{asset('template/images/avatar/5.png')}}" width="30" alt="">
@@ -396,12 +396,12 @@
                                                 <td class="py-2">05/04/2016</td>
                                                 <td>
                                                     <a href="{{url('template/edit-student.html')}}" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="{{url('template/javascript:void(0);')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <a href="{{url('template/;')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                             <tr class="btn-reveal-trigger">
                                                 <td class="p-3">
-                                                    <a href="{{url('template/javascript:void(0);')}}">
+                                                    <a href="{{url('template/;')}}">
                                                         <div class="media d-flex align-items-center">
                                                             <div class="avatar avatar-xl mr-2">
                                                                 <img class="rounded-circle img-fluid" src="{{asset('template/images/avatar/1.png')}}" alt="" width="30">
@@ -418,12 +418,12 @@
                                                 <td class="py-2">05/04/2018</td>
                                                 <td>
                                                     <a href="{{url('template/edit-student.html')}}" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="{{url('template/javascript:void(0);')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <a href="{{url('template/;')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                             <tr class="btn-reveal-trigger">
                                                 <td class="p-3">
-                                                    <a href="{{url('template/javascript:void(0);')}}">
+                                                    <a href="{{url('template/;')}}">
                                                         <div class="media d-flex align-items-center">
                                                             <div class="avatar avatar-xl mr-2">
                                                                 <img class="rounded-circle img-fluid" src="{{asset('template/images/avatar/1.png')}}" alt="" width="30">
@@ -440,12 +440,12 @@
                                                 <td class="py-2">17/03/2016</td>
                                                 <td>
                                                     <a href="{{url('template/edit-student.html')}}" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="{{url('template/javascript:void(0);')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <a href="{{url('template/;')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                             <tr class="btn-reveal-trigger">
                                                 <td class="p-3">
-                                                    <a href="{{url('template/javascript:void(0);')}}">
+                                                    <a href="{{url('template/;')}}">
                                                         <div class="media d-flex align-items-center">
                                                             <div class="avatar avatar-xl mr-2">
                                                                 <img class="rounded-circle img-fluid" src="{{asset('template/images/avatar/5.png')}}" width="30" alt="">
@@ -462,12 +462,12 @@
                                                 <td class="py-2">12/07/2014</td>
                                                 <td>
                                                     <a href="{{url('template/edit-student.html')}}" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="{{url('template/javascript:void(0);')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <a href="{{url('template/;')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                             <tr class="btn-reveal-trigger">
                                                 <td class="p-3">
-                                                    <a href="{{url('template/javascript:void(0);')}}">
+                                                    <a href="{{url('template/;')}}">
                                                         <div class="media d-flex align-items-center">
                                                             <div class="avatar avatar-xl mr-2">
                                                                 <img class="rounded-circle img-fluid" src="{{asset('template/images/avatar/1.png')}}" alt="" width="30">
@@ -484,7 +484,7 @@
                                                 <td class="py-2">15/06/2014</td>
                                                 <td>
                                                     <a href="{{url('template/edit-student.html')}}" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
-                                                    <a href="{{url('template/javascript:void(0);')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                    <a href="{{url('template/;')}}" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                         </tbody>

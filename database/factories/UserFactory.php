@@ -15,7 +15,7 @@ class UserFactory extends Factory
     public function definition()
     {
         $genre = $this->faker->randomElement(['masculin', 'feminin']);
-        $role = $this->faker->randomElement([1, 0]);
+        //$role = $this->faker->randomElement([1, 0]);
         return [
             //
             "Nom"=>$this->faker->LastName,
@@ -33,7 +33,7 @@ class UserFactory extends Factory
 
              //"photo" => $this->faker->image(storage_path('bcs',400,300, null, false)), 
             //"photo" => $this->faker->image('public/images/bcs',400,300, null, false),
-            "roles"=>$role,
+            //"roles"=>$role,
 
             //image('template/images/bcs.png',400,300),
         

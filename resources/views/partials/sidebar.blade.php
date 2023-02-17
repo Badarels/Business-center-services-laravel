@@ -19,26 +19,26 @@
 							<span class="nav-text">Gestion utilisateurs</span>
 						</a>
                     <ul aria-expanded="false">
+                                <li><a href="{{Route('admin.utilisateur.users.index')}}">Liste des utilisateurs</a></li>
+                    </ul>
+                    <ul aria-expanded="false">
                         <li><a class="has-arrow" href="{{url('template/javascript:void()')}}" aria-expanded="false">
 							<i class="la la-users"></i>
 							<span class="nav-text">Agents</span>
 						    </a>
+
                             <ul aria-expanded="false">
                                 <li><a href="{{Route('admin.utilisateur.users.index')}}">Liste Agents</a></li>
                                 <li><a href="{{url('template/add-student.html')}}">Ajouter Agents</a></li>
-                                <li><a href="{{url('template/edit-student.html')}}">Editer Agents</a></li>
-                                <li><a href="{{url('template/about-student.html')}}"> A Propos Agents</a></li>
                             </ul>
                         </li>
                         <li><a class="has-arrow" href="{{url('template/javascript:void()')}}" aria-expanded="false">
 							<i class="la la-users"></i>
 							<span class="nav-text">Administrateurs</span>
-						    </a>
+						    </a>                    
                             <ul aria-expanded="false">
                                 <li><a href="{{url('/ListeUtilisateurs')}}">Liste Administrateurs</a></li>
                                 <li><a href="{{url('template/add-student.html')}}">Ajouter Administrateurs</a></li>
-                                <li><a href="{{url('template/edit-student.html')}}">Editer Administrateurs</a></li>
-                                <li><a href="{{url('template/about-student.html')}}"> A Propos Administrateurs</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -37,6 +37,8 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/ListeUtilisateurs', [App\Http\Controllers\UtilisateurController::class, 'listeUtilisateur'])->name('listeUtilisateur');
+Route::get('/AjouterUtilisateurs', [App\Http\Controllers\UtilisateurController::class, 'ajouterUtilisateur'])->name('ajouterUtilisateur');
+
 Route::group([
     "middlewar" => ["auth", "auth.admin"],
     "as" => "admin."
@@ -51,6 +53,7 @@ Route::group([
 
         function () {
             Route::get('/ListeUtilisateurs', Utilisateurs::class)->name('users.index');
+            //Route::get('/AjouterUtilisateurs', [App\Http\Controllers\UtilisateurController::class])->name('users.ajouter');
         }
 
     );
