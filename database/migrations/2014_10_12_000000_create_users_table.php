@@ -28,7 +28,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('photo')->nullable(); 
-            //$table->integer('roles');
+            //$table->string('roles')->default("Admin");
            // $table->enum('role',['Administrateur', 'Agent'])->default('Administrateur');
             $table->foreignId('users_id')->default(1)->constrained('users');
             $table->timestamps();

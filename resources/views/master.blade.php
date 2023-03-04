@@ -19,7 +19,11 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{ url('template/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
     <link rel="stylesheet" href="{{ url('template/css/style.css')}}">
-
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     @livewireStyles
+    
 </head>
 
 <body>
@@ -99,6 +103,9 @@
         Scripts
     ***********************************-->
     <!-- Required template/vendors -->
+          @livewireScripts
+          <script src="sweetalert2.min.js"></script>
+
         <script src="{{asset('template/vendor/global/global.min.js')}}"></script>
             <script src="{{asset('template/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
             <script src="{{asset('template/js/custom.min.js')}}"></script>
@@ -123,6 +130,6 @@
             <!-- Datatable -->
             <script src="{{asset('template/vendor/datatables/js/jquery.dataTables.min.js')}}"></script>
             <script src="{{asset('template/js/plugins-init/datatables.init.js')}}"></script>
-          
+
         </body>
 </html>

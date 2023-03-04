@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Livewire\RolePermission;
+use App\Http\Livewire\Utilisateur;
+use App\Http\Livewire\CreateUsers;
 use App\Http\Livewire\Utilisateurs;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -36,8 +39,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/ListeUtilisateurs', [App\Http\Controllers\UtilisateurController::class, 'listeUtilisateur'])->name('listeUtilisateur');
-Route::get('/AjouterUtilisateurs', [App\Http\Controllers\UtilisateurController::class, 'ajouterUtilisateur'])->name('ajouterUtilisateur');
+//Route::get('/ListeUtilisateurs', [App\Http\Controllers\UtilisateurController::class, 'listeUtilisateur'])->name('listeUtilisateur');
+//Route::get('/AjouterUtilisateurs', [App\Http\Controllers\UtilisateurController::class, 'ajouterUtilisateur'])->name('ajouterUtilisateur');
 
 Route::group([
     "middlewar" => ["auth", "auth.admin"],
@@ -50,14 +53,17 @@ Route::group([
             "prefix" => "Gestion Utilisateurs",
             "as" => "utilisateur."
         ],
-
         function () {
-            Route::get('/ListeUtilisateurs', Utilisateurs::class)->name('users.index');
+            //Route::get('/ListeUtilisateurs', Utilisateurs::class)->name('users.index');
+            Route::get('/ListeUtilisateurs', Utilisateur::class)->name('Users.utilisateur');
+            Route::get('/Role', RolePermission::class)->name('Users.Role');
+            Route::get('/Create', CreateUsers::class)->name('Users.create');
             //Route::get('/AjouterUtilisateurs', [App\Http\Controllers\UtilisateurController::class])->name('users.ajouter');
         }
-
     );
 });
 
+//Route::get('/Create', Utilisateur::class)->name('Users.create');
+//Route::view('addusers', 'livewire.utilisateur');
 
-    
+

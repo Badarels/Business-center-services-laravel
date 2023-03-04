@@ -29,76 +29,55 @@
             <div class="container-fluid">
 			
                 <div class="row">
-                
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-primary overflow-hidden">
-							<div class="card-header">
-								<h3 class="card-title text-white">Total Students</h3>
-								<h5 class="text-white mb-0"><i class="fa fa-caret-up"></i> 822</h5>
-							</div>
-							<div class="card-body text-center mt-3">
-								<div class="ico-sparkline">
-									<div id="sparkline12"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-success overflow-hidden">
-							<div class="card-header">
-								<h3 class="card-title text-white">New Students</h3>
-								<h5 class="text-white mb-0"><i class="fa fa-caret-up"></i> 357</h5>
-							</div>
-							<div class="card-body text-center mt-4 p-0">
-								<div class="ico-sparkline">
-									<div id="spark-bar-2"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-secondary overflow-hidden">
-							<div class="card-header pb-3">
-								<h3 class="card-title text-white">Total Course</h3>
-								<h5 class="text-white mb-0"><i class="fa fa-caret-up"></i> 547</h5>
-							</div>
-							<div class="card-body p-0 mt-2">
-								<div class="px-4"><span class="bar1" data-peity='{ "fill": ["rgb(0, 0, 128)", "rgb(7, 135, 234)"]}'>6,2,8,4,-3,8,1,-3,6,-5,9,2,-8,1,4,8,9,8,2,1</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-danger overflow-hidden">
-							<div class="card-header pb-3">
-								<h3 class="card-title text-white">Fees Collection</h3>
-								<h5 class="text-white mb-0"><i class="fa fa-caret-up"></i> 3280$</h5>
-							</div>
-							<div class="card-body p-0 mt-1">
-								<span class="peity-line-2" data-width="100%">7,6,8,7,3,8,3,3,6,5,9,2,8</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-6 col-xxl-6 col-sm-6">
-						<div class="card">
-							<div class="card-header">
-								<h3 class="card-title">Income/Expense Report</h3>
-							</div>
+             <div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card">
 							<div class="card-body">
-								<canvas id="barChart_2"></canvas>
+								<h4 class="card-title">Total</h4>
+								<h3>180</h3>
+								<div class="progress mb-2">
+									<div class="progress-bar progress-animated bg-primary" style="width: 80%"></div>
+								</div>
+								<small>80% Increase in 20 Days</small>
 							</div>
 						</div>
-					</div>
-					<div class="col-xl-6 col-xxl-6 col-sm-6">
-						<div class="card">
-							<div class="card-header">
-								<h3 class="card-title">Income/Expense Report</h3>
-							</div>
+                    </div>
+                        <div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card">
 							<div class="card-body">
-								 <canvas id="areaChart_1"></canvas>
+								<h4 class="card-title">Total</h4>
+								<h3>160</h3>
+								<div class="progress mb-2">
+									<div class="progress-bar progress-animated bg-primary" style="width: 80%"></div>
+								</div>
+								<small>80% Increase in 20 Days</small>
 							</div>
 						</div>
-					</div>
+                    </div>
+                        <div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body">
+								<h4 class="card-title">Total </h4>
+								<h3>3280</h3>
+								<div class="progress mb-2">
+									<div class="progress-bar progress-animated bg-primary" style="width: 80%"></div>
+								</div>
+								<small>80% Increase in 20 Days</small>
+							</div>
+						</div>
+                    </div>
+                        <div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body">
+								<h4 class="card-title">Total</h4>
+								<h3>26</h3>
+								<div class="progress mb-2">
+									<div class="progress-bar progress-animated bg-primary" style="width: 80%"></div>
+								</div>
+								<small>80% Increase in 20 Days</small>
+							</div>
+						</div>
+                    </div>
+					
 					<div class="col-xl-8 col-xxl-8 col-lg-8 col-md-12 col-sm-12">
                         <div class="card">
                             <div class="card-header">

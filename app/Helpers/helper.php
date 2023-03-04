@@ -3,6 +3,11 @@
         return auth()->user()->prenom . " " . auth()->user()->nom;
     }
 
+    define("PAGECREATEFORM","create");
+    define("PAGEEDITFORM", "edit");
+    define("PAGELIST", "liste");
+    define("PAGEROLE", "role");
+
     function getROleName(){
         $roleName = "";
         $i = 0;
